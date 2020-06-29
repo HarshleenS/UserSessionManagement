@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Login info">
+
+        <EditTextPreference
+            android:key="uname"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Enter user name"
+            android:title="User name" />
+        <EditTextPreference
+            android:key="upassword"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Enter password"
+            android:title="Password" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Settings">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="chk1"
+            android:summary="Yes/No"
+            android:title="Keep me logged in" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sw"
+            android:summary="On/Off"
+            android:title="Sound" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/countries"
+            android:entryValues="@array/countries"
+            android:key="list"
+            android:summary="Select country"
+            android:title="Country" />
+    </PreferenceCategory>
+</PreferenceScreen>
